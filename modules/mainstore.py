@@ -31,10 +31,7 @@
 # % SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-import argparse
-import re
-import sys
-
+"""Store of most of the parameters of the calculator"""
 from . import rates, taxyear
 
 
@@ -51,6 +48,7 @@ class Main_store:
         self.accrualday = None
 
     def print(self):
+        """Print the parameters"""
         notspec = '*** Not Specified ***'
         if self.name:
             print('Name:', self.name)

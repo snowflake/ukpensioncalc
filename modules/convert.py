@@ -30,12 +30,10 @@
 # % NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 # % SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-
+"""Conversion functions for dates, decimals, and days of the week"""
 import datetime
 from decimal import Decimal as D
 import re
-
-"""Conversion routines for dates, decimals and days of the week"""
 
 # dates in iso format yyyy-mm-dd
 re_iso = re.compile(r'^[0-9]{4,4}-[01][0-9]-[0-3][0-9]$')
@@ -82,8 +80,7 @@ def convert_value(value):
 
 
 def day_number(daystring):
-    """Given a day of the week like 'Tuesday',"""
-    """return the day_number ( Monday = 0 )"""
+    """Given a day of the week like 'Tuesday', return the day_number ( Monday = 0 )"""
     if not isinstance(daystring, str):
         raise ValueError('Error: day name must be a string: ' + str(daystring))
     try:
@@ -93,10 +90,10 @@ def day_number(daystring):
     return number
 
 
-def day_name(day_number):
+def day_name(daynumber):
     """Given a day number int 0..6, return day name as string"""
-    if not isinstance(day_number, int):
+    if not isinstance(daynumber, int):
         raise ValueError('Error: expecting integer in convert.day_name()')
-    if not 0 <= day_number <= 6:
+    if not 0 <= daynumber <= 6:
         raise ValueError('Error: day number must be 0 .. 6')
-    return day_list[day_number]
+    return day_list[daynumber]

@@ -31,7 +31,7 @@
 # % SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-"""Taxyear class"""
+"""Taxyear class - store everything about a tax year"""
 
 import datetime
 

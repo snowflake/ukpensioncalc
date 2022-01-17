@@ -62,7 +62,7 @@ Enter the year as a 4 digit number between 2000 and 2099.""")
                         help='Show the version of this program')
     args = parser.parse_args()
     if args.version:
-        print('Pension Calculator version 1.2.2')
+        print('Pension Calculator version 1.2.3')
         sys.exit(0)
     if args.sample:
         modules.documents.sample_print()

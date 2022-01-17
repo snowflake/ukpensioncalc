@@ -30,11 +30,12 @@
 # % NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 # % SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-
+"""Line parser"""
 from . import convert
 
 
 def parser(main, line, lineno):
+    """Parse the line at linenumber lineno"""
     s = line.split(sep=None)
     l = len(s)
     if not l:  # Test if line is whitespace

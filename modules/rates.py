@@ -30,7 +30,7 @@
 # % NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 # % SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-
+""" rates and oneoff database"""
 from decimal import Decimal as D
 import datetime
 # from operator import itemgetter
@@ -50,6 +50,7 @@ class Rates:
     """Code for maintaining the rates and payments databases"""
 
     def __init__(self):
+        """Initialisation"""
         self.__sorted = False
         self.__rates = []
         self.duplicates = {}  # A dict to check for duplicate entries
@@ -63,7 +64,7 @@ class Rates:
             print(i[ds], i[rs])
 
     def __str__(self):
-        """create string of the rates if called by print(rates)"""
+        """return string of the rates if called by print(rates)"""
         self.sort_rates()
         ret = ''
         for i in self.__rates:

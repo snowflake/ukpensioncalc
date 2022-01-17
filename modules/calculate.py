@@ -30,6 +30,7 @@
 # % NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 # % SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+"""Calculate the pension and print the results"""
 
 import datetime
 import decimal
@@ -38,7 +39,7 @@ DAYS_IN_WEEK = 7
 
 
 def calculate(ms):
-    """Calculate the total pension for a tax year. ms is an instance 
+    """Calculate the total pension for a tax year. ms is an instance \
  of mainstore class"""
     count_of_payments = {}
     accrual_day_of_week = convert.day_number(ms.accrualday)  # returns 0..6
