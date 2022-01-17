@@ -1,35 +1,35 @@
 #!/usr/bin/env python3
 
-#% BSD 3-Clause License
-#% 
-#% Copyright (c) 2022, David Evans
-#% All rights reserved.
-#% 
-#% Redistribution and use in source and binary forms, with or without
-#% modification, are permitted provided that the following conditions are met:
-#% 
-#% 1. Redistributions of source code must retain the above copyright notice,
-#%    this list of conditions and the following disclaimer.
-#% 
-#% 2. Redistributions in binary form must reproduce the above copyright
-#%    notice, this list of conditions and the following disclaimer in the
-#%    documentation and/or other materials provided with the distribution.
-#% 
-#% 3. Neither the name of the copyright holder nor the names of its
-#%    contributors may be used to endorse or promote products derived from
-#%    this software without specific prior written permission.
-#% 
-#% THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-#% "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
-#% TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
-#% PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
-#% CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-#% EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-#% PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-#% PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-#% LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-#% NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-#% SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+# % BSD 3-Clause License
+# %
+# % Copyright (c) 2022, David Evans
+# % All rights reserved.
+# %
+# % Redistribution and use in source and binary forms, with or without
+# % modification, are permitted provided that the following conditions are met:
+# %
+# % 1. Redistributions of source code must retain the above copyright notice,
+# %    this list of conditions and the following disclaimer.
+# %
+# % 2. Redistributions in binary form must reproduce the above copyright
+# %    notice, this list of conditions and the following disclaimer in the
+# %    documentation and/or other materials provided with the distribution.
+# %
+# % 3. Neither the name of the copyright holder nor the names of its
+# %    contributors may be used to endorse or promote products derived from
+# %    this software without specific prior written permission.
+# %
+# % THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+# % "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+# % TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+# % PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+# % CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+# % EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+# % PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+# % PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+# % LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+# % NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+# % SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
 import argparse
@@ -38,28 +38,28 @@ import sys
 import io
 import modules
 
+
 def main():
     """The main body of the program"""
     if sys.hexversion < 0x03070000:
         print('This program requires Python 3.7+')
         sys.exit(1)
-        
 
     desc = """Calculate UK State Pension accruing in a tax year"""
 
     parser = argparse.ArgumentParser(description=desc)
-    parser.add_argument('-r','--ratesfile', help='Name of the rates file.',
+    parser.add_argument('-r', '--ratesfile', help='Name of the rates file.',
                         required=False, nargs=1)
-    parser.add_argument('-t','--taxyearending', required=False , nargs=1,
+    parser.add_argument('-t', '--taxyearending', required=False, nargs=1,
                         help="""The calendar year in which \
 the tax year ended. \
 Enter the year as a 4 digit number between 2000 and 2099.""")
     parser.add_argument('--sample', action="store_true",
                         help="""Show a sample rates file.""")
-    parser.add_argument('--licence', action = 'store_true',
-                        help = 'Show the software licence and disclaimer.')
+    parser.add_argument('--licence', action='store_true',
+                        help='Show the software licence and disclaimer.')
     parser.add_argument('--version', action='store_true',
-                        help = 'Show the version of this program')
+                        help='Show the version of this program')
     args = parser.parse_args()
     if args.version:
         print('Pension Calculator version 1.2.2')
@@ -86,7 +86,7 @@ Enter the year as a 4 digit number between 2000 and 2099.""")
     # Read the file and parse it
     try:
         with io.open(args.ratesfile[0], encoding='ascii', newline=None) \
-             as config:
+                as config:
             lineno = 0
             error_count = 0
             for line in config:
@@ -108,7 +108,7 @@ Enter the year as a 4 digit number between 2000 and 2099.""")
         print('Do not use a pound sign.')
         sys.exit(1)
     except FileNotFoundError:
-        print('Error: File not found: ' +  args.ratesfile[0])
+        print('Error: File not found: ' + args.ratesfile[0])
         sys.exit(1)
     if not ms.accrualday:
         print('-------------------')
@@ -123,5 +123,6 @@ Enter the year as a 4 digit number between 2000 and 2099.""")
     modules.calculate.calculate(ms)
     return ms
 # ------------------- End of subroutines ------------------
+
 
 ms = main()
