@@ -62,7 +62,7 @@ Enter the year as a 4 digit number between 2000 and 2099.""")
                         help = 'Show the version of this program')
     args = parser.parse_args()
     if args.version:
-        print('pension version 1.2')
+        print('pension version 1.2.1')
         sys.exit(0)
     if args.sample:
         modules.documents.sample_print()
@@ -110,9 +110,13 @@ Enter the year as a 4 digit number between 2000 and 2099.""")
     except FileNotFoundError:
         print('Error: File not found: ' +  args.ratesfile[0])
         sys.exit(1)
-
+    if not ms.accrualday:
+        print('-------------------')
+        error_count = error_count + 1
+        print('-------------------')
+        print('Error: required directive \"accrualday\" not found')
     if error_count:
-        print('Lines: ' + str(lineno) + ' Errors: ' + str(error_count))
+        print('Lines: ' + str(lineno) + ', Errors: ' + str(error_count))
         print('Cannot continue.')
         sys.exit(1)
     ms.print()
