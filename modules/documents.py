@@ -73,6 +73,7 @@ description   Frogs pay tax too.
 
 # The 'accrualday' directive specifies the tax on the week that your
 # pension accrues on. It should be the same as your payment day.
+# This directive is required.
 #
 # To find your accrual day, visit:
 # https://www.gov.uk/state-pension/what-youll-get
@@ -97,6 +98,18 @@ rate	  14/4/2011	    310.78
 rate	  15/4/2012	    319.22
 rate      1/5/2013	    340.37
 rate	  2014-05-13        355.72
+rate      2015-01-10          0.00
+
+          #########################################
+          #                                       #
+          #              WARNING                  #
+          #                                       #
+          #   You should delete all these rates   #
+          #         and add your own!!!           #
+          #                                       #
+          #########################################
+
+
 
 # The date can be specified in UK or ISO format.
 #
