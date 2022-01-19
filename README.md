@@ -15,7 +15,7 @@ your bank account in a tax year.
 
 Go to our software repository on GitHub:
 
-	        https://github.com/snowflake/ukpensioncalc
+	        [[Here|https://github.com/snowflake/ukpensioncalc]]
 
 if you are not already viewing this document there.
 
