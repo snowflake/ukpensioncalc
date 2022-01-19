@@ -73,3 +73,6 @@ Now run:
         python3 pension.py --ratesfile yourfile.txt --taxyearend 2021
 
 to see the calculation for the tax year ending 2021.
+
+-------
+This file was automatically generated on  Wed 19 Jan 2022 12:11:42 GMT
