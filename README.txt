@@ -1,4 +1,4 @@
-/# Pension calculator for UK State Pension from the DWP
+Pension calculator for UK State Pension from the DWP
 
 Disclaimer
 
