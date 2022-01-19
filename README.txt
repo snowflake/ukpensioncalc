@@ -14,6 +14,7 @@ payments to your bank account in a tax year.
 Q: How do I obtain the software?
 
 Go to our software repository on GitHub:
+
 https://github.com/snowflake/ukpensioncalc
 
 if you are not already viewing this document there.
@@ -40,7 +41,7 @@ Python3 is avalable as standard on recent versions of macOS.
 
 Python3 for Windows and macOS can be downloaded from:
 
-    ( the Python site ) https://www.python.org 
+https://www.python.org/
 
 It can also be obtained using your operating system's package manager.
 
