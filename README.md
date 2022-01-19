@@ -13,7 +13,7 @@ your bank account in a tax year.
 
 ## Q: How do I obtain the software?
 
-Go to our software repository on GitHub: 
+Go to our software repository on GitHub:
 
 https://github.com/snowflake/ukpensioncalc
 
