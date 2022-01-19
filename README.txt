@@ -76,5 +76,14 @@ Now run:
 
 to see the calculation for the tax year ending 2021.
 
+Wiki
+
+More information can be found on our wiki. It is currently under
+constuction, but here are some pages available.
+
+Click on the wiki link if viewing on GitHubd.
+
+Or visit the wiki at: https://github.com/snowflake/ukpensioncalc/wiki
+
 -------
-This file was automatically generated on  Wed 19 Jan 2022 12:22:26 GMT
+This file was automatically generated on  Wed 19 Jan 2022 13:07:31 GMT
