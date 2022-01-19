@@ -1,4 +1,4 @@
-# Pension calculator for UK State Pension from the DWP
+/# Pension calculator for UK State Pension from the DWP
 
 ## Disclaimer
 
@@ -19,16 +19,16 @@ https://github.com/snowflake/ukpensioncalc
 
 if you are not already viewing this document there.
 
-On the top left-hand corner of the page, click on ```Code```
+On the top left-hand corner of the page, click on `Code`
 
 On the right-hand-side of the page, under Releases, click on the release
-next to the ```Latest``` icon.
+next to the `Latest` icon.
 
 This takes you to the releases page.
 
-On the left-hand-side, under Assets, you should see 2 ```Source code``` links.
+On the left-hand-side, under Assets, you should see 2 `Source code` links.
 If these are not shown, click on the triangle next to Assets.
-To download the software, click on ```Source code (zip)``` or ```Source code (tar.gz)``` deoending on which format of archive you want
+To download the software, click on `Source code (zip)` or `Source code (tar.gz)` deoending on which format of archive you want
 
 ## Installing the program
 
