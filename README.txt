@@ -26,8 +26,8 @@ This takes you to the releases page.
 
 On the left-hand-side, under Assets, you should see 2 Source code links.
 If these are not shown, click on the triangle next to Assets. To
-download the software, click on Source code (zip) or ```Source code
-(tar.gz) deoending on which format of archive you want
+download the software, click on Source code (zip) or
+Source code (tar.gz) deoending on which format of archive you want
 
 Installing the program
 
