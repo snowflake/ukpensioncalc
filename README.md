@@ -5,7 +5,7 @@
 This software is developed independently of DWP and HMRC and it is
 not endorsed by them. See also the LICENSE file.
 
-## Q: What does this software do?
+## Q: What does this progam do?
 
 A: It calculates the total state pension accruing in a tax year. This is not
 necessarily the same as the total obtained by adding up all the payments to
@@ -19,6 +19,8 @@ https://github.com/snowflake/ukpensioncalc
 
 if you are not already viewing this document there.
 
+On the top left-hand corner of the page, click on ```Code```
+
 On the right-hand-side of the page, under Releases, click on the release
 next to the ```Latest``` icon.
 
@@ -30,7 +32,7 @@ To download the software, click on ```Source code (zip)``` or ```Source code (ta
 
 ## Installing the program
 
-Create an empty folder and unpack the softare archive into it.
+Create an empty folder and unpack the software archive into it.
 
 ## Running the progam
 
