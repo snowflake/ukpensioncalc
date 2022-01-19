@@ -13,9 +13,8 @@ payments to your bank account in a tax year.
 
 Q: How do I obtain the software?
 
-Go to our software repository on GitHub:
-
-            ( Here ) https://github.com/snowflake/ukpensioncalc 
+Go to our software repository on GitHub: ( Here )
+https://github.com/snowflake/ukpensioncalc
 
 if you are not already viewing this document there.
 
