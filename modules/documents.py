@@ -112,7 +112,16 @@ rate      2015-01-10          0.00
           #         and add your own!!!           #
           #                                       #
           #########################################
-
+          #########################################
+          #                                       #
+          #              WARNING                  #
+          #                                       #
+          #   Make sure you specify the weekly    #
+          #    rate as advised by DWP, NOT the    #
+          #     monthly payment from your bank    #
+          #            statement.                 #
+          #                                       #
+          #########################################
 
 
 # The date can be specified in UK or ISO format.
@@ -127,7 +136,7 @@ rate      2015-01-10          0.00
 # ISO format is yyyy-mm-dd
 #     yyyy is always 4 digits. mm and dd are always 2 digits
 
-# The payment is speified as  nnnn.nn
+# The payment is specified as  nnnn.nn
 #     There must be exactly 2 digits to the right of the decimal point,
 #     even when both digits are zero.
 # 
